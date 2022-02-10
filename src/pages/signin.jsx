@@ -37,7 +37,7 @@ export default function Signin() {
       <Nav />
 
       <div className='loginMain relative'>
-        <div className='font-semibold text-2xl absolute z-10 left-1/4 top-96 text-transparent bg-clip-text bg-gradient-to-r from-gradient-blue to-gradient-purple'>로그인하고 서비스를 이용하세요.</div>
+        <div className='font-semibold text-2xl absolute z-10 left-1/4 top-96 text-transparent bg-clip-text bg-gradient-to-r from-gradient-blue to-gradient-purple'>로그인 후 서비스를 이용하세요.</div>
 
         <div className="bg-white drop-shadow-2xl rounded absolute left-1/4 w-96 p-10 top-430px pb-8">
           <div className="mb-4">
