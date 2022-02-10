@@ -1,11 +1,28 @@
 import { Link } from 'react-router-dom'
 // import logo from './src/logo.svg'
 import Nav from '../components/nav'
+import Footer from '../components/footer'
+import axios from 'axios'
+
+const response = (await axios.get(`http://localhost:1234/Adaily`)).data
+console.log(response)
 
 export default function Home() {
 
+  let res = []
+  for (let i = 0; i < 6; i++) { 
+    res.push(<div key={i} ind={i} className='card w-64 h-80 bg-slate-50 drop-shadow-xl rounded-3xl m-20 text-center hover:scale-110 hover:-translate-y-1 duration-100'>
+      <img className='cardImg w-64 h-64 object-cover rounded-2xl mb-5' src={ response[i].img } />
+      <div className='cardTitle'>{ response[i].name }</div>
+    </div>) 
+  }
+
+  function goList (e) {
+    window.location.href = "/list"
+  }
+
   return (
-    <div className="Home font-mono mb-52">
+    <div className="Home font-mono text-center">
       <Nav />
 
       <div className='indexMain relative'>
@@ -16,13 +33,14 @@ export default function Home() {
 
       <div className='popularity mb-20 font-semibold text-3xl text-center mt-20 text-transparent bg-clip-text bg-gradient-to-r from-gradient-blue to-gradient-purple'>인기</div>
       <div className='cards flex items-center flex-wrap justify-center'>
-        <div className='card w-64 h-80 bg-slate-300 drop-shadow-xl rounded-3xl m-20'></div>
-        <div className='card w-64 h-80 bg-slate-300 drop-shadow-xl rounded-3xl m-20'></div>
-        <div className='card w-64 h-80 bg-slate-300 drop-shadow-xl rounded-3xl m-20'></div>
-        <div className='card w-64 h-80 bg-slate-300 drop-shadow-xl rounded-3xl m-20'></div>
-        <div className='card w-64 h-80 bg-slate-300 drop-shadow-xl rounded-3xl m-20'></div>
-        <div className='card w-64 h-80 bg-slate-300 drop-shadow-xl rounded-3xl m-20'></div>
+
+        { res }
+
       </div>
+
+      <button className='moreBtn py-4 px-3 mb-52 text-white font-semibold bg-gradient-to-r from-gradient-blue to-gradient-purple mt-20 rounded-xl drop-shadow-xl hover:drop-shadow-2xl hover:-translate-y-1 duration-100' onClick={goList}>더 알아보기</button>
+
+      <Footer />
     </div>
   )
 }

@@ -6,7 +6,7 @@ export default function Nav() {
 
   return (
     <div className="Nav">
-        <nav className="flex justify-around py-6 drop-shadow-2xl bg-gradient-to-r from-gradient-blue to-gradient-purple fixed inset-x-0 opacity-90 z-10">
+        <nav className="flex justify-around py-6 drop-shadow-2xl bg-gradient-to-r from-gradient-blue to-gradient-purple fixed inset-x-0 opacity-90 z-30">
             <div className="flex items-center">
                 <a className="text-2xl font-semibold text-white" href="/">Sekai</a>
             </div>
