@@ -12,7 +12,7 @@ export default function Footer() {
                 </div>
                 
                 <div className="flex items-center space-x-2">
-                <a href="/" className=" text-xl text-white font-semibold">2022 DIA.</a>
+                <a href="/" className=" text-lg text-white font-semibold">© {(new Date()).getFullYear()} All Rights Reserved.</a>
                 </div>
         </footer>
     </div>
