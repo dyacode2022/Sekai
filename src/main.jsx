@@ -6,7 +6,7 @@ import './Main.css'
 import App from './App'
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter basename="/Sekai">
     <App />
   </BrowserRouter>,
   document.getElementById('root')
