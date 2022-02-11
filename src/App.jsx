@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom'
 function App() {
 
   return (
-    <Routes basename={process.env.PUBLIC_URL}>
+    <Routes>
       <Route path="/" element={ <Home /> } />
       <Route path="/in" element={ <Signin /> } />
       <Route path="/list" element={ <List /> } />
