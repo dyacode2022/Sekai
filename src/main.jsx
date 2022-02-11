@@ -6,7 +6,7 @@ import './Main.css'
 import App from './App'
 
 ReactDOM.render(
-  <BrowserRouter basename="/Sekai">
+  <BrowserRouter>
     <App />
   </BrowserRouter>,
   document.getElementById('root')

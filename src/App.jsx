@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom'
 function App() {
 
   return (
-    <Routes>
+    <Routes basename="/Sekai">
       <Route path="/" element={ <Home /> } />
       <Route path="/in" element={ <Signin /> } />
       <Route path="/list" element={ <List /> } />
