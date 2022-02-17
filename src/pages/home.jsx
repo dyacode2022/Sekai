@@ -4,7 +4,7 @@ import Nav from '../components/nav'
 import Footer from '../components/footer'
 import axios from 'axios'
 
-const response = (await axios.get(`http://localhost:1234/Adaily`)).data
+const response = (await axios.get(`https://sekai-backend.herokuapp.com/Adaily`)).data
 // console.log(response)
 console.log(window.sessionStorage.getItem("usrId"))
 

@@ -9,7 +9,7 @@ export default function Signin() {
   const [pawd, setPawd] = useState('')
 
   async function onLogin(e) {
-    const response = (await axios.get(`http://localhost:1234/getusr`)).data
+    const response = (await axios.get(`https://sekai-backend.herokuapp.com/getusr`)).data
     // console.log(response)
 
     for (let i = 0; i < response.length; i++) {

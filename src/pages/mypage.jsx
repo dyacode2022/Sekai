@@ -10,7 +10,7 @@ import { useState } from 'react'
 let viewUsrId = ''
 let viewUsrInform = ''
 
-const response = (await axios.get(`http://localhost:1234/getusr`)).data
+const response = (await axios.get(`https://sekai-backend.herokuapp.com/getusr`)).data
 
 for (let i = 0; i < response.length; i++) { 
   if (response[i].id == window.sessionStorage.getItem("usrId")) {
