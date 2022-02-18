@@ -20,7 +20,7 @@ export default function Nav() {
             <div className="items-center hidden space-x-8 lg:flex">
                 <a href="/list" className="text-lg text-white font-semibold">List</a>
                 <a href="/in" className="text-lg text-white font-semibold">Signin</a>
-                <a href="/" className="text-lg text-white font-semibold">Signup</a>
+                <a href="/up" className="text-lg text-white font-semibold">Signup</a>
                 <a href="/mypage" className="text-lg text-white font-semibold">MyPage</a>
             </div>
             <div className="flex items-center space-x-2">

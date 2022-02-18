@@ -50,7 +50,7 @@ export default function Signin() {
           </div>
           <div className="flex items-center justify-between">
             <button className="bg-purple-400 text-white font-bold py-2 px-4 rounded" type="button" onClick={onLogin}>Sign In</button>
-            <a className="inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker" href="/">Forgot Password?</a>
+            <a className="inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker" href="/up">Don't have an account?</a>
           </div>
         </div>
 

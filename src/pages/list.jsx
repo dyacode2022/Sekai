@@ -20,7 +20,7 @@ export default function List() {
     <div className="Home font-mono text-center">
       <Nav />
 
-      <div className='font-semibold text-2xl'>개발 예정.</div>
+      <div className='relative mb-52font-semibold text-2xl'>개발 예정.</div>
     </div>
   )
 }
